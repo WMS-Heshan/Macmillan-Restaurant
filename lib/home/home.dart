@@ -38,9 +38,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     padding: EdgeInsets.fromLTRB(15.0, 110.0, 0.0, 0.0),
                     child: Text(
-                        'Hello',
+                        'MACMILLAN' ,
                         style: TextStyle(
-                            fontSize: 80.0, fontWeight: FontWeight.bold)
+                            fontSize: 65.0, fontWeight: FontWeight.bold)
                     ),
                   ),
                   Container(
@@ -48,15 +48,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Text(
                         "Let's Eat",
                         style: TextStyle(
-                            fontSize: 80.0, fontWeight: FontWeight.bold)
+                            fontSize: 70.0, fontWeight: FontWeight.bold)
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.fromLTRB(330.0, 175.0, 0.0, 0.0),
+                    padding: EdgeInsets.fromLTRB(300.0, 190.0, 0.0, 0.0),
                     child: Text(
-                        '.',
+                        "#",
                         style: TextStyle(
-                            fontSize: 80.0, fontWeight: FontWeight.bold, color: Colors.redAccent)
+                            fontSize: 60.0, fontWeight: FontWeight.bold, color: Colors.redAccent)
                     ),
                   ),
                 ],
