@@ -27,6 +27,13 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
+  String get email => email;
+  String get password => password;
+
+  set email(String email) {}
+  set password(String email) {}
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         )
                     ),
                     onChanged: (val){
-
+                      setState(() => email = val);
                     }
                   ),
                   SizedBox(height: 20.0),
@@ -101,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     obscureText: true,
                       onChanged: (val){
-
+                        setState(() => password = val);
                       }
                   ),
                   SizedBox(height: 5.0),
@@ -128,7 +135,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Colors.redAccent,
                       elevation: 7.0,
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () async {
+                          print(email);
+                          print(password);
+                        },
                         child: Center(
                           child: Text(
                             'LOGIN',
