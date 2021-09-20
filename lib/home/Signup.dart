@@ -51,6 +51,9 @@ class _SignupPageState extends State<SignupPage> {
                         // hintStyle: ,
                         focusedBorder: UnderlineInputBorder(
                             borderSide: BorderSide(color: Colors.green))),
+                    onChanged: (val){
+
+                    }
                   ),
                   SizedBox(height: 10.0),
                   TextField(

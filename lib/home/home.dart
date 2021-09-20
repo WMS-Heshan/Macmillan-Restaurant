@@ -4,7 +4,9 @@ void main() => runApp(new MyApp());
 
 
 class MyApp extends StatelessWidget {
-
+  //text fiels state
+  String email = '';
+  String password = '';
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -79,6 +81,9 @@ class _MyHomePageState extends State<MyHomePage> {
                             borderSide: BorderSide(color: Colors.redAccent)
                         )
                     ),
+                    onChanged: (val){
+
+                    }
                   ),
                   SizedBox(height: 20.0),
                   TextField(
@@ -95,6 +100,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         )
                     ),
                     obscureText: true,
+                      onChanged: (val){
+
+                      }
                   ),
                   SizedBox(height: 5.0),
                   Container(
